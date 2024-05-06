@@ -1,6 +1,6 @@
 keyboard:
   colorSchemas:
-    - schemaName: wubi86_normal
+    - schemaName: wubi98_normal
       name: 常规
       author: KyleBing
       back_color: "0xFFFFFF"

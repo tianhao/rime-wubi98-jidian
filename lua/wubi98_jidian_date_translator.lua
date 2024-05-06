@@ -1,5 +1,5 @@
 
-function wubi86_jidian_date_translator(input, seg)
+function wubi98_jidian_date_translator(input, seg)
 
     -- 日期格式说明：
 
@@ -48,7 +48,7 @@ function wubi86_jidian_date_translator(input, seg)
 
     -- 输入星期
     -- -- @JiandanDream
-    -- -- https://github.com/KyleBing/rime-wubi86-jidian/issues/54
+    -- -- https://github.com/KyleBing/rime-wubi98-jidian/issues/54
     if (input == "week") then
         local weekTab = {'日', '一', '二', '三', '四', '五', '六'}
         yield(Candidate("week", seg.start, seg._end, "周"..weekTab[tonumber(os.date("%w")+1)], ""))
@@ -65,4 +65,4 @@ function wubi86_jidian_date_translator(input, seg)
     end
 end
 
-return wubi86_jidian_date_translator
+return wubi98_jidian_date_translator

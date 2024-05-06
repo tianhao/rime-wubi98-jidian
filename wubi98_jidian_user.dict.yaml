@@ -1,12 +1,11 @@
 ---
-name: wubi86_jidian_user_hamster
-version: "2023-11-17"
-init_time: "2023-11-17"
-dict_grouped: false # 词库管理应用识别：标记该码表为分组模式
+name: wubi98_jidian_user
+version: "2019-01-20"
+last_edit_time: "2021-08-07"
+dict_grouped: true # 词库管理应用识别：标记该码表为分组模式
 
-# 当前码表主要接收 iOS 端加词的需求
 
-sort: by_weight
+sort: original
   # 码表的排序方式
   # by_weight 权重
   # original 原始顺序
@@ -18,3 +17,6 @@ sort: by_weight
 # `##` 两个 # 开头的会被识别为分组名，其后跟的词条就是该组的内容
 
 ...
+## 这是分组名
+分组词条	wxyt
+

@@ -1,4 +1,6 @@
-![rime_all](https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/710c7e80-1660-48f1-bcc5-157c6bd3f662)
+基于极点86五笔，替换为98词库
+
+![rime_all](https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/710c7e80-1660-48f1-bcc5-157c6bd3f662)
 
 该库是 [Rime](https://rime.im/) 输入法一个 86 版极点五笔的输入配置方案，支持多平台（Windows、macOS、Linux、iOS、Android）
 
@@ -42,7 +44,7 @@ Rime 输入法具有高度可定制化的特性，通过读取不同的配置文
 
 ### 1. macOS
 
-<img width="525" alt="Screenshot 2024-03-17 at 07 59 12" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/7bb140ba-7d9f-44ca-a3b1-875aa008dbb1">
+<img width="525" alt="Screenshot 2024-03-17 at 07 59 12" src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/7bb140ba-7d9f-44ca-a3b1-875aa008dbb1">
 
 ### 2. Windows
 皮肤可以通过修改 `weasel.custom.yaml` 文件内的 color_scheme 实现修改，对应正文的颜色方案
@@ -53,7 +55,7 @@ patch:
     color_scheme: WhiteAqua  # 匹配正文的颜色方案，对应正文的颜色方案名
 ```
 
-<img width="500" alt="skin-windows" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/d3ab63d8-6d93-47f5-a599-5f4d9334dfab"/>
+<img width="500" alt="skin-windows" src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/d3ab63d8-6d93-47f5-a599-5f4d9334dfab"/>
 
 ### 3. Ubuntu
 <img width="200" alt="skin-ubuntu" src="https://user-images.githubusercontent.com/12215982/131607073-0b3dfe0e-bfc8-4be0-91c7-b304702acdda.png">
@@ -69,12 +71,12 @@ patch:
 │   ├── icon.ai                       # 图标设计稿
 │   └── logo.png                      # logo
 ├── 仓键盘布局
-│   └── wubi86_jidian_ios_keyboard.yaml # 仓输入法键盘布局
+│   └── wubi98_jidian_ios_keyboard.yaml # 仓输入法键盘布局
 ├── lua  # lua 脚本
-│   ├── wubi86_jidian_calculator.lua
-│   ├── wubi86_jidian_date_translator.lua
-│   ├── wubi86_jidian_single_char_first_filter.lua
-│   └── wubi86_jidian_single_char_only.lua
+│   ├── wubi98_jidian_calculator.lua
+│   ├── wubi98_jidian_date_translator.lua
+│   ├── wubi98_jidian_single_char_first_filter.lua
+│   └── wubi98_jidian_single_char_only.lua
 ├── default.custom.yaml                     # 配置 - 自定义一些输入法的功能：标点，二三候选等
 ├── squirrel.custom.yaml                    # 配置 - 鼠须管（for macOS）输入法候选词界面
 ├── weasel.custom.yaml                      # 配置 - 小狼毫（for Windows）输入法候选词界面
@@ -83,19 +85,19 @@ patch:
 ├── pinyin_simp.dict.yaml                   # 词库 - 简体拼音码表 - 五笔中拼音输入需要的
 ├── pinyin_simp.schema.yaml                 # 方案 - 简体拼音
 
-├── wubi86_jidian.ico                       # 输入法任务栏图标 for Windows
-├── wubi86_jidian.schema.yaml               # 方案 - 极点五笔
-├── wubi86_jidian.dict.yaml                 # 词库 - 极点五笔主码表
-├── wubi86_jidian_user.dict.yaml            # 词库 - 用户私人词库
+├── wubi98_jidian.ico                       # 输入法任务栏图标 for Windows
+├── wubi98_jidian.schema.yaml               # 方案 - 极点五笔
+├── wubi98_jidian.dict.yaml                 # 词库 - 极点五笔主码表
+├── wubi98_jidian_user.dict.yaml            # 词库 - 用户私人词库
 
-├── wubi86_jidian_ios_keyboard.yaml         # 仓输入法键盘布局
-├── wubi86_jidian_user_hamster.dict.yaml    # 词库 - iOS 通过快捷指令添加的词条将添加到这里 分享地址：[https://www.icloud.com/shortcuts/a87901f7a9fa48f3986241ee74ddc74a](https://www.icloud.com/shortcuts/a87901f7a9fa48f3986241ee74ddc74a)
+├── wubi98_jidian_ios_keyboard.yaml         # 仓输入法键盘布局
+├── wubi98_jidian_user_hamster.dict.yaml    # 词库 - iOS 通过快捷指令添加的词条将添加到这里 分享地址：[https://www.icloud.com/shortcuts/a87901f7a9fa48f3986241ee74ddc74a](https://www.icloud.com/shortcuts/a87901f7a9fa48f3986241ee74ddc74a)
 
-├── wubi86_jidian_extra.dict.yaml           # 词库 - 扩展词库 - 实时更新的线上词库（需要使用 [五笔词条工具](https://github.com/KyleBing/wubi-dict-editor) ）
-└── wubi86_jidian_extra_district.dict.yaml  # 词库 - 扩展词库 - 行政区域名称： 省市县区
-├── wubi86_jidian_pinyin.schema.yaml        # 方案 - 五笔拼音混输
-├── wubi86_jidian_trad.schema.yaml          # 方案 - 五笔简入繁出
-└── wubi86_jidian_trad_pinyin.schema.yaml   # 方案 - 五笔拼音混输 简入繁出
+├── wubi98_jidian_extra.dict.yaml           # 词库 - 扩展词库 - 实时更新的线上词库（需要使用 [五笔词条工具](https://github.com/KyleBing/wubi-dict-editor) ）
+└── wubi98_jidian_extra_district.dict.yaml  # 词库 - 扩展词库 - 行政区域名称： 省市县区
+├── wubi98_jidian_pinyin.schema.yaml        # 方案 - 五笔拼音混输
+├── wubi98_jidian_trad.schema.yaml          # 方案 - 五笔简入繁出
+└── wubi98_jidian_trad_pinyin.schema.yaml   # 方案 - 五笔拼音混输 简入繁出
 ```
 
 ## 四、安装
@@ -103,8 +105,8 @@ patch:
 ### 1. macOS ( 鼠须管 )
 去 [官网下载](https://rime.im/download/)，按步骤安装即可
 
-1. 下载 五笔配置文件 [https://github.com/KyleBing/rime-wubi86-jidian](https://github.com/KyleBing/rime-wubi86-jidian)
-2. macOS 上的 鼠须管 配置文件存放目录是 `~/Library/Rime`，把下载后的`rime-wubi86-jidian`内的所有文件移到 `Rime` 目录中，
+1. 下载 五笔配置文件 [https://github.com/KyleBing/rime-wubi98-jidian](https://github.com/KyleBing/rime-wubi98-jidian)
+2. macOS 上的 鼠须管 配置文件存放目录是 `~/Library/Rime`，把下载后的`rime-wubi98-jidian`内的所有文件移到 `Rime` 目录中，
 3. 点击状态栏上的输入法图标，下拉菜单中选择 <kbd>部署</kbd> (英文是<kbd>Deploy</kbd>），或者可以直接使用快捷键 <kbd>control</kbd> + <kbd>option</kbd> + <kbd>~</kbd>
 
 > **注意：** `Rime` 目录下的 `Build` 目录是程序生成的，不要把配置文件放在那里面，无视它即可。
@@ -155,7 +157,7 @@ ubuntu 的配置文件目录在
 3. 在列表中找到 `五笔86-极点方案`，然后选择 <kbd>覆盖并部署</kbd> 即可完成安装
 4. 就能正常打字了
 
-但痛点还是一样，无法很方便的添加词汇。所以我才在该方案中添加了一个名为 `wubi86_jidian_ios_keyboard.yaml` 的码表来接收 iOS 添加的一些词。
+但痛点还是一样，无法很方便的添加词汇。所以我才在该方案中添加了一个名为 `wubi98_jidian_ios_keyboard.yaml` 的码表来接收 iOS 添加的一些词。
 iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击该链接添加使用即可
 > [https://www.icloud.com/shortcuts/a87901f7a9fa48f3986241ee74ddc74a](https://www.icloud.com/shortcuts/a87901f7a9fa48f3986241ee74ddc74a)
 
@@ -174,29 +176,29 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 2. 点击下方 <kbd>Add new schemas</kbd> 中的 <kbd>Micro Plum</kbd> 按钮
 3. 在弹出窗口的 **Schema URL** 不添加如下内容，点击 <kbd>Install</kbd> 即可
     ```bash
-    https://raw.githubusercontent.com/KyleBing/rime-wubi86-jidian/master/wubi86_jidian.schema.yaml
+    https://raw.githubusercontent.com/KyleBing/rime-wubi98-jidian/master/wubi98_jidian.schema.yaml
     ```
 4. 之后就可以在输入框里用这个码表进行打字了
 
 
-<img width="811" alt="Screenshot 2024-03-04 at 16 03 27" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/ddd23706-01c8-4d32-b1fc-ae184d6b088c">
+<img width="811" alt="Screenshot 2024-03-04 at 16 03 27" src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/ddd23706-01c8-4d32-b1fc-ae184d6b088c">
 
 ## 五、扩展词库
 
 默认已添加的词库有：
 ```yaml
-  - wubi86_jidian_user                # 个人私有词库
-  - wubi86_jidian_extra               # 扩展词库
-  - wubi86_jidian_extra_district      # 扩展词库 - 行政区域
+  - wubi98_jidian_user                # 个人私有词库
+  - wubi98_jidian_extra               # 扩展词库
+  - wubi98_jidian_extra_district      # 扩展词库 - 行政区域
 ```
 
-可以通过修改 `wubi86_jidian.dict.yaml` 文件头部的部分来启用、停用某一个词库。
+可以通过修改 `wubi98_jidian.dict.yaml` 文件头部的部分来启用、停用某一个词库。
 
 比如想停用 `行政区域` 这个词库，直接在其前面添加  `#` 或者直接删除该行，执行输入法的 `部署` 或 `Deploy` 操作后即可生效。
 
 ### 1. 线上共享的扩展词库
 不再动原来的主词库，除非发现一些很没有必要的词才会进行删除操作，不会进行添加操作。  
-以后新增的词都都放置在了 `wubi86_jidian_extra` 这个扩展词库中，可以通过工具来实现实时更新线上最新的词库内容。
+以后新增的词都都放置在了 `wubi98_jidian_extra` 这个扩展词库中，可以通过工具来实现实时更新线上最新的词库内容。
 
 这个词库是我维护的，你也可以将一些常用的词上传到线上。  
 我的想法是维护一个咱们五笔用户自己的词库，最终实现非常舒服的码字的目标。
@@ -230,11 +232,11 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 在输入状态时，<kbd>control</kbd> + <kbd>0</kbd> 或者 <kbd>shift</kbd> + <kbd>control</kbd> + <kbd>0</kbd> 弹出菜单
 
 ### 2. 菜单内容
-弹出的菜单中，处于第一位的是当前使用的输入法方案，其后跟着是该方案中的输入法菜单，有【半角 - 全角】【简 - 繁】等常见功能菜单，再后面是其它可选的输入法方案，对应 [`default.custom.yaml`](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/default.custom.yaml) 中 `schema_list` 字段内容
+弹出的菜单中，处于第一位的是当前使用的输入法方案，其后跟着是该方案中的输入法菜单，有【半角 - 全角】【简 - 繁】等常见功能菜单，再后面是其它可选的输入法方案，对应 [`default.custom.yaml`](https://github.com/KyleBing/rime-wubi98-jidian/blob/master/default.custom.yaml) 中 `schema_list` 字段内容
 
 ### 3. 五笔拼音混输
 
-在 [default.custom.yaml](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/default.custom.yaml) 文件中罗列着可选的方案，已经注明具体方案的作用，如果你想五笔拼音混输，可以将混输方案移至最上面。
+在 [default.custom.yaml](https://github.com/KyleBing/rime-wubi98-jidian/blob/master/default.custom.yaml) 文件中罗列着可选的方案，已经注明具体方案的作用，如果你想五笔拼音混输，可以将混输方案移至最上面。
 
 <img width="572" alt="Screenshot 2022-11-24 at 09 00 17" src="https://user-images.githubusercontent.com/12215982/203671534-c1d02ca4-66cd-4b8e-94b8-07908a1ac293.png">
 
@@ -256,7 +258,7 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 - 转繁体
 - 转香港繁体
 - 转台湾繁体
-具体可以看这个文件内的说明： [wubi86_jidian_trad.schema.yaml](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/wubi86_jidian_trad.schema.yaml)
+具体可以看这个文件内的说明： [wubi98_jidian_trad.schema.yaml](https://github.com/KyleBing/rime-wubi98-jidian/blob/master/wubi98_jidian_trad.schema.yaml)
 > 以不切换文字的形式使用只是暂时转繁，换个程序就会恢复简体了。如果你想一直使用简入繁出就选择 「简入繁出」这个方案
 
 ### 8. 系统 `时间`、`日期` 和 `星期`
@@ -273,7 +275,7 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 ### 9. 支持大写数字输入：壹贰叁肆伍陆
 本库中包含一个可以输入大写数字的方案，名叫 `大写数字`，呼出菜单选择该方案即可。
 
-在这个模式下：具体可以看源文件 [`numbers.schema.yaml`](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/numbers.schema.yaml)
+在这个模式下：具体可以看源文件 [`numbers.schema.yaml`](https://github.com/KyleBing/rime-wubi98-jidian/blob/master/numbers.schema.yaml)
 
 
 | 键           | 对应值             | | 键 (按住 shift) | 对应值            |
@@ -284,14 +286,14 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 | y           | 元月亿             | | y          | 元月亿             |
 
 ### 10. 特殊字符快捷输入
-默认是关闭的，具体可以查看 wiki [如何启用 ` /fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%60--fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
+默认是关闭的，具体可以查看 wiki [如何启用 ` /fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi98-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%60--fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
 
 <img width="300" src="https://user-images.githubusercontent.com/12215982/134291024-7df6073c-ec5a-420c-bcd1-2e63ea33d04b.jpg"/>
 
 
 ### 11. <kbd>z</kbd> 键重复上次输入内容
 
-<img width="435" alt="Screenshot 2024-01-25 at 09 56 53" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/8730a3f9-14d8-4ea7-92c8-75dfd220e65b">
+<img width="435" alt="Screenshot 2024-01-25 at 09 56 53" src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/8730a3f9-14d8-4ea7-92c8-75dfd220e65b">
 
 
 ## 七、个性配置
@@ -315,14 +317,14 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 ```
 
 ### 3. 空码时自动清码
-默认配置是不会自动清的，想要自动清码，修改文件  `wubi86_jidian.schema.yaml` 中 `speller` 这一栏，将前面的 `#` 号删除即可，如下
+默认配置是不会自动清的，想要自动清码，修改文件  `wubi98_jidian.schema.yaml` 中 `speller` 这一栏，将前面的 `#` 号删除即可，如下
 ```yaml
   auto_clear: max_length                # 空码时自动清空
 ```
 
 ### 4. 编码提示
 默认是关闭的，
-想要开启，打开 `wubi86_jidian.schema.yaml` 编辑 `translator` -> `comment_format` 改成如下即可
+想要开启，打开 `wubi98_jidian.schema.yaml` 编辑 `translator` -> `comment_format` 改成如下即可
 
 ```yaml
   comment_format: 
@@ -344,7 +346,7 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 > 快捷指令链接： [https://www.icloud.com/shortcuts/a8243310b25f46878a7ea38b87cc3df2](https://www.icloud.com/shortcuts/a8243310b25f46878a7ea38b87cc3df2)
 > 
 > 为了解决 iOS 端无法编辑词库文本实现新增词的问题，写了一个快捷指令操作，实现的功能是：
-> 1. 在仓输入法目录下的 Rime 目录中的 `wubi86_jidian_user_hamster.dict.yaml` 文件的末尾处添加你要添加的 `词` `编码` `权重` 到
+> 1. 在仓输入法目录下的 Rime 目录中的 `wubi98_jidian_user_hamster.dict.yaml` 文件的末尾处添加你要添加的 `词` `编码` `权重` 到
 > 2. 根据新文件重新部署仓输入法
 > 
 > 当你通过 iCloud 实现多端同步之后，这些新增的词也会出同步现在其它平台上。  
@@ -353,7 +355,7 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 ### 6. 输出系统变量
 自 Rime `v0.13` 之后可自定义输出系统变量，如日期等
 
-文件夹 [./lua/](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/rime/) 盛放的是调用的方法，你需要在相应的 `XXXX.schema.yaml` 文件的 `engine`/`translators` 字段添加一些东西，可以参阅本库的 [`wubi86_jidian.schema.yaml`](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/wubi86_jidian.schema.yaml) 文件。
+文件夹 [./lua/](https://github.com/KyleBing/rime-wubi98-jidian/blob/master/rime/) 盛放的是调用的方法，你需要在相应的 `XXXX.schema.yaml` 文件的 `engine`/`translators` 字段添加一些东西，可以参阅本库的 [`wubi98_jidian.schema.yaml`](https://github.com/KyleBing/rime-wubi98-jidian/blob/master/wubi98_jidian.schema.yaml) 文件。
 
 具体 `rime.lua` 文件说明参阅这里： [https://github.com/hchunhui/librime-lua/blob/master/sample/lua/date.lua](https://github.com/hchunhui/librime-lua/blob/master/sample/lua/date.lua)
 
@@ -363,7 +365,7 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 
 > **注意**: 这样会关闭自动上屏，顶字上屏的功能。
 
-需要修改 `wubi86_jidian.schema.yaml` 下面几个内容
+需要修改 `wubi98_jidian.schema.yaml` 下面几个内容
 
 ```bash
 speller:
@@ -379,11 +381,11 @@ translator:
 
 
 ### 8. 单字派
-如果你是单字派，只打单字，可以修改 `wubi86_jidian.schema.yaml` 这个文件，找到以下位置，根据需要去除对应行前面的 `#`，重新部署即可生效
+如果你是单字派，只打单字，可以修改 `wubi98_jidian.schema.yaml` 这个文件，找到以下位置，根据需要去除对应行前面的 `#`，重新部署即可生效
 ```yaml
   filters:
-#    - lua_filter@*wubi86_jidian_single_char_first_filter # 单字优先
-#    - lua_filter@*wubi86_jidian_single_char_only # 纯单字
+#    - lua_filter@*wubi98_jidian_single_char_first_filter # 单字优先
+#    - lua_filter@*wubi98_jidian_single_char_only # 纯单字
 ```
 
 ### 9. 隐藏候选窗口（Windows）
@@ -397,22 +399,22 @@ translator:
 
 这样打起字来有点当年用黑莓 auto_text 打五笔的感觉了。
 
-<img src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/d440c7f0-8cde-49f6-b778-a3fc4aefe9da" width="500">
+<img src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/d440c7f0-8cde-49f6-b778-a3fc4aefe9da" width="500">
 
 ### 10. 定义输入方案的图标（Windows）
 Windows 小狼毫 v0.15.0 版已经支持自定义某个方案的图标了，比如这个五笔方案就已经设置了自定义的图标。任务栏的图标不再是原来的 “中” 字，而是：
 
-<img src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/7377bde6-a36d-40ac-b0ad-0674d22a68a3" width="600">
+<img src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/7377bde6-a36d-40ac-b0ad-0674d22a68a3" width="600">
 
 当按 <kbd>shift</kbd> 切换中英文输入的时候，就会显示这个图标。
 
-<img src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/88ff51b5-6098-4464-a70f-6feb9e09de4e" width="500">
+<img src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/88ff51b5-6098-4464-a70f-6feb9e09de4e" width="500">
 
 
-编辑某个你需要自定义图标的方案文件，比如我这个 `wubi86_jidian.schema.yaml`，编辑 `schema` 下的这两个位置，不过只使用第一个位置即可。
+编辑某个你需要自定义图标的方案文件，比如我这个 `wubi98_jidian.schema.yaml`，编辑 `schema` 下的这两个位置，不过只使用第一个位置即可。
 
 ```yaml
-  icon: "wubi86_jidian.ico"           # string 方案图标，格式： .ico
+  icon: "wubi98_jidian.ico"           # string 方案图标，格式： .ico
   ascii_icon:                         # string
 ```
 
@@ -424,11 +426,11 @@ Windows 小狼毫 v0.15.0 版已经支持自定义某个方案的图标了，比
 
 没有权重时，子码表无法自由定义在候选词中的位置
 
-<img width="800" alt="没有权重时" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/6e27527a-dfc0-45f5-8bde-6ad15f1c1c89">
+<img width="800" alt="没有权重时" src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/6e27527a-dfc0-45f5-8bde-6ad15f1c1c89">
 
 有了初始的权重后就可以定义任意位置了
 
-<img width="800" alt="有权重后" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/b80de286-66b9-4db7-8cfb-87f82b472b7a">
+<img width="800" alt="有权重后" src="https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/b80de286-66b9-4db7-8cfb-87f82b472b7a">
 
 
 ## 九、macOS、Windows、iOS 同步
@@ -436,10 +438,10 @@ Windows 小狼毫 v0.15.0 版已经支持自定义某个方案的图标了，比
 - 这个地址就选用 iOS 仓输入法的方案盛放地址。
 
 > 具体实现步骤参见 wiki:   
-> [如何通过 iCloud 实现词库多端同步，Windows、iOS、macOS](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87-iCloud-%E5%AE%9E%E7%8E%B0%E8%AF%8D%E5%BA%93%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%EF%BC%8CWindows%E3%80%81iOS%E3%80%81macOS)
+> [如何通过 iCloud 实现词库多端同步，Windows、iOS、macOS](https://github.com/KyleBing/rime-wubi98-jidian/wiki/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87-iCloud-%E5%AE%9E%E7%8E%B0%E8%AF%8D%E5%BA%93%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%EF%BC%8CWindows%E3%80%81iOS%E3%80%81macOS)
 
 
-![rime](https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/221203d7-a7c0-4995-9530-b4970097a812)
+![rime](https://github.com/KyleBing/rime-wubi98-jidian/assets/12215982/221203d7-a7c0-4995-9530-b4970097a812)
 
 
 ## 十、其它相关链接
@@ -460,15 +462,15 @@ __配置教程链接__
 - [x] 小狼毫 v0.15.0 更新说明 [https://github.com/rime/weasel/blob/master/CHANGELOG.md#0150-2023-06-06](https://github.com/rime/weasel/blob/master/CHANGELOG.md#0150-2023-06-06)
 
 __本库 Wiki__
-- [x] [.schema.yaml 详解](https://github.com/KyleBing/rime-wubi86-jidian/wiki/Schema.yaml-%E8%AF%A6%E8%A7%A3)
-- [x] [关于编辑词库时的 tab 问题](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%BE%91%E8%AF%8D%E5%BA%93%E6%97%B6-tab-%E7%9A%84%E9%97%AE%E9%A2%98)
-- [x] [皮肤配置详解](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E7%9A%AE%E8%82%A4%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3)
-- [x] [如何启用 ` fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%5B-%E7%AC%A6%E5%8F%B7-%5D-%60fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
+- [x] [.schema.yaml 详解](https://github.com/KyleBing/rime-wubi98-jidian/wiki/Schema.yaml-%E8%AF%A6%E8%A7%A3)
+- [x] [关于编辑词库时的 tab 问题](https://github.com/KyleBing/rime-wubi98-jidian/wiki/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%BE%91%E8%AF%8D%E5%BA%93%E6%97%B6-tab-%E7%9A%84%E9%97%AE%E9%A2%98)
+- [x] [皮肤配置详解](https://github.com/KyleBing/rime-wubi98-jidian/wiki/%E7%9A%AE%E8%82%A4%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3)
+- [x] [如何启用 ` fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi98-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%5B-%E7%AC%A6%E5%8F%B7-%5D-%60fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
 
 
 
 ## 支持
-感谢 [JetBrains](https://www.jetbrains.com/?from=rime-wubi86-jidian@KyleBing) 提供的工具支持
+感谢 [JetBrains](https://www.jetbrains.com/?from=rime-wubi98-jidian@KyleBing) 提供的工具支持
 
 ![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg?_ga=2.54620846.401568951.1648434626-301403838.1648434626)
 
